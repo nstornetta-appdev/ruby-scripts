@@ -50,9 +50,9 @@ task :quote do
       :citation => "Lao Tzu"
     },
   ]
-
-  # =====================================================================
-  # Your code goes below.
-  # =====================================================================
-
+  
+  quote_index = rand(quotations.length)
+  quote, author = quotations[quote_index][:quote], quotations[quote_index][:citation]
+  
+  ap("#{quote} -- #{author}")
 end

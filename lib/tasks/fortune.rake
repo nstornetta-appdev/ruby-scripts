@@ -7,9 +7,6 @@ task :fortune do
     "Bide your time, for success is near",
     "Every day in your life is a special occasion"
   ]
-
-  # =====================================================================
-  # Your code goes below.
-  # =====================================================================
-
+  random_fortune = fortunes[rand(fortunes.length)]
+  ap("#{random_fortune}")
 end
